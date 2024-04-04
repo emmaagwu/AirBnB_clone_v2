@@ -1,1 +1,1 @@
-This directory implements webpage design.
+#ALX AirBnB web static
