@@ -15,5 +15,6 @@ ln -sf /data/web_static/releases/test/ /data/web_static/current
 
 #give ownership of /data/ to ubuntu user AND group
 sudo chown -R ubuntu:ubuntu /data/
-sudo sed -i "26i \\\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n" /etc/nginx/sites-available/default
+
+sed -i '/^\tserver_name/ a\\tlocation /hbnb_static \{\n\t\talias /data/web_static/current;\n\t\}\n' /etc/nginx/sites-enabled/default
 service nginx restart
