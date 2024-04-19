@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-""" scripts start a web app to listen on 0.0.0.0 port 5000. """
+""" scripts start a web app to listen on 0.0.0.0 port 5000. """i
+
 from flask import Flask
+
 app = Flask(__name__)
+
+
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
-    """ returns a string to the output"""
+    """ returns 'Hello HBNB!' to the output"""
     return "Hello HBNB!"
 
 
