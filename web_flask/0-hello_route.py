@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" scripts start a web app to listen on 0.0.0.0 port 5000. """i
+""" scripts start a web app to listen on 0.0.0.0 port 5000. """
 
 from flask import Flask
 
