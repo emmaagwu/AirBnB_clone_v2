@@ -46,7 +46,7 @@ def show_python(text="is cool"):
 @app.route("/number/<int:n>", strict_slashes=False)
 def show_n(n):
     """
-        displays '<n> is a number' only if n is an integer 
+        displays '<n> is a number' only if n is an integer
     """
     return "{} is a number".format(n)
 
